@@ -1,0 +1,147 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(285, 100%, 30%);
+    color: rgb(125, 0, 98);
+}
+nav {
+    background-color:  #3bd5ed;
+    padding: 10px 20px;
+    height: 45px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem; /* Centre les éléments horizontalement */
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: hsl(0, 0%, 7%);
+    text-decoration: none;
+    transition: color 0.3s; /* Ajoute une transition de couleur lors du survol */
+}
+nav ul li a:hover {
+    color: #070707; /* Changement de couleur au survol */
+}
+nav ul li:last-child {
+    margin-right: 0; /* Supprime la marge de droite pour le dernier élément */
+}
+
+.container {
+     padding: right 30px;;
+    
+}
+.Mars{
+    background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDdtd2doajdpdWR1OHk3NWRmN3lmZTN5eWZubWJpanN3enl4NnI4ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mCmXcXnfwkzQn6nJbJ/giphy.gif);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#contact h2 {
+    font-size: 24px;
+}
+
+#contact form {
+    margin-top: 20px;
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#contact form button {
+    background-color: #336699;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+ .Mars{
+    background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDdtd2doajdpdWR1OHk3NWRmN3lmZTN5eWZubWJpanN3enl4NnI4ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mCmXcXnfwkzQn6nJbJ/giphy.gif);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+
+    width: 100%; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Maintient le rapport hauteur/largeur */
+    margin-top: 20px; /* Espacement du GIF par rapport aux autres éléments */
+}
+.contact{
+    padding: 4rem;
+}
+.html{
+    display: flex;
+    flex-direction: column;
+}
+.eng{
+    display: flex;
+    flex-direction: column;
+}
+
+const aleatoire = Math.random() * (101 - 1) + 1;
+const aleatoireRounded = Math.round(aleatoire)
+
+const tries = []
+const userInput = prompt("Entrez un nombre entre 1 et 100°");
+
+tries.push(userInput)
+
+if(userInput == aleatoireRounded) {
+  console.log("Bravo, vous avez gagné !")
+} else if (choice < aleatoireRounded) {
+  console.log("Trop petit")
+}else {
+  console.log("Trop grand")
+}
